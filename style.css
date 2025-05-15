@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  background: #d6d9dd;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.header-img {
+  position: relative;
+}
+
+.header-img img {
+  width: 100%;
+  display: block;
+  height: 160px;
+  object-fit: cover;
+}
+
+.share-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.share-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-wrapper {
+  position: relative;
+  top: -50px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.name {
+  margin: -30px 0 0 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title {
+  margin: 5px 0 10px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.red {
+  color: #b10000;
+  font-weight: 600;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0 20px 0;
+}
+
+.socials img {
+  width: 32px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #f0f0f0;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.btn:first-child {
+  background: #c98d5c;
+  color: white;
+}
+
+.layanan {
+  padding: 20px;
+  background: #fff;
+}
+
+.layanan h3 {
+  margin: 0 0 10px;
+}
+
+.layanan p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+
+/* Tambahkan di atas atau di akhir CSS */
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.card {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.socials a:hover img {
+  transform: scale(1.2);
+}
+
+.share-btn:hover {
+  background: #e0e0e0;
+}
+
+.layanan {
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  border-top: 1px solid #ccc;
+}
