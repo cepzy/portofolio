@@ -1,106 +1,116 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yaser Official</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="card">
-    <div class="header-img">
-      <img src="img/header.jpg" alt="Header" />
-      <div class="share-btn">
-        <img src="assets/icons/me.png" alt="Share" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yaser Official</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="header-img">
+        <img src="img/header.jpg" alt="Header" />
+        <div class="share-btn">
+          <img src="assets/icons/me.png" alt="Share" />
+        </div>
       </div>
-    </div>
 
-    <div class="profile-wrapper">
-      <img src="img/profile.jpg" alt="Foto Profil" class="profile-img" />
-    </div>
-
-    <h1 class="name">Yaser Official</h1>
-    <p class="title">
-      <span class="red">Web Developer | Design Grafis</span><br />
-      <span class="red">Editing Foto & Video</span>
-    </p>
-    <br />
-
-    <div class="socials">
-      <a href="https://www.facebook.com/profile.php?id=100092878549425 "><img src="assets/icons/facebook.png" alt="FB" /></a>
-      <a href="https://www.tiktok.com/@cihuyy180923?_t=ZS-8wNUBJdO33y&_r=1 "><img src="assets/icons/tiktok.png" alt="TikTok" /></a>
-      <a href="https://www.instagram.com/yerasid?igsh=NDFrczdsY3c3Y2tz "><img src="assets/icons/instagram.png" alt="IG" /></a>
-      <!-- Hilangkan onclick alert dan biarkan event listener JS yang handle -->
-      <a href="#" id="link-unavailable">
-        <img src="assets/icons/link.png" alt="Link" />
-      </a>
-    </div>
-
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span id="close-modal" class="close">&times;</span>
-        <p>Link ini belum tersedia.</p>
+      <div class="profile-wrapper">
+        <img src="img/profile.jpg" alt="Foto Profil" class="profile-img" />
       </div>
-    </div>
 
-    <!-- <div class="buttons">
+      <h1 class="name">Yaser Official</h1>
+      <p class="title">
+        <span class="red">Web Developer | Design Grafis</span><br />
+        <span class="red">Editing Foto & Video</span>
+      </p>
+      <br />
+
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=100092878549425 "
+          ><img src="assets/icons/facebook.png" alt="FB"
+        /></a>
+        <a href="https://www.tiktok.com/@cihuyy180923?_t=ZS-8wNUBJdO33y&_r=1 "
+          ><img src="assets/icons/tiktok.png" alt="TikTok"
+        /></a>
+        <a href="https://www.instagram.com/yerasid?igsh=NDFrczdsY3c3Y2tz "
+          ><img src="assets/icons/instagram.png" alt="IG"
+        /></a>
+        <!-- Hilangkan onclick alert dan biarkan event listener JS yang handle -->
+        <a href="#" id="link-unavailable">
+          <img src="assets/icons/link.png" alt="Link" />
+        </a>
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="close-modal" class="close">&times;</span>
+          <p>Link ini belum tersedia.</p>
+        </div>
+      </div>
+
+      <!-- <div class="buttons">
       <a href="https://wa.me/6282292120735?text=Halo%20saya%20ingin%20pre-order%20website%20digital.%20Bisa%20dibantu%3F" class="btn">
         <img src="assets/icons/whatsapp.png" alt="WA" /> WhatsApp
       </a>
     </div> -->
-    
 
-    <div class="layanan">
-      <h3>LAYANAN</h3>
-      <p>
-        Menyediakan layanan pembuatan website Digital undangan pernikahan, juga website toko online dan website lainnya. Di bawah ini ada template/produk undangan digital<br /><br />
-    </p>
-    <div>
-      <a href="template.html" class="btn">Lihat Template</a>
-    </div>
+      <div class="layanan">
+        <h3>LAYANAN</h3>
+        <p>
+          Menyediakan layanan pembuatan website Digital undangan pernikahan,
+          juga website toko online dan website lainnya. Di bawah ini ada
+          template/produk undangan digital<br /><br />
+        </p>
+        <div>
+          <a href="template.html" class="btn">Lihat Template</a>
+        </div>
 
-    <footer class="footer">
-        <div class="footer-content">
-        <img src="img/footer.png" alt="Logo Yaser Official" class="footer-logo" />
-        <!-- <p>&copy; 2025 Yaser Official. All rights reserved.</p> -->
-         <p>&copy; DITA BUKE🐈‍⬛</p>
+        <footer class="footer">
+          <div class="footer-content">
+            <img
+              src="img/footer.png"
+              alt="Logo Yaser Official"
+              class="footer-logo"
+            />
+            <!-- <p>&copy; 2025 Yaser Official. All rights reserved.</p> -->
+            <p>&copy; DITA BUKE🐈‍⬛</p>
+          </div>
+        </footer>
       </div>
-    </footer>
-
     </div>
-  </div>
 
-  <script>
-    // Ambil elemen modal dan tombol close
-    const modal = document.getElementById("modal");
-    const closeBtn = document.getElementById("close-modal");
+    <script>
+      // Ambil elemen modal dan tombol close
+      const modal = document.getElementById("modal");
+      const closeBtn = document.getElementById("close-modal");
 
-    // Fungsi buka modal
-    function openModal() {
-      modal.style.display = "flex"; // pakai flex supaya align center
-    }
-
-    // Fungsi tutup modal
-    closeBtn.onclick = function () {
-      modal.style.display = "none";
-    };
-
-    // Tutup modal jika klik di luar konten modal
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
+      // Fungsi buka modal
+      function openModal() {
+        modal.style.display = "flex"; // pakai flex supaya align center
       }
-    };
 
-    // Pasang event ke link icon "Link" yang belum tersedia
-    document.getElementById("link-unavailable").addEventListener("click", function (event) {
-      event.preventDefault();
-      openModal();
-    });
-  </script>
+      // Fungsi tutup modal
+      closeBtn.onclick = function () {
+        modal.style.display = "none";
+      };
 
-      <!-- Tambahkan ini sebelum penutup </body> -->
+      // Tutup modal jika klik di luar konten modal
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
 
+      // Pasang event ke link icon "Link" yang belum tersedia
+      document
+        .getElementById("link-unavailable")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          openModal();
+        });
+    </script>
 
-</body>
+    <!-- Tambahkan ini sebelum penutup </body> -->
+  </body>
 </html>
