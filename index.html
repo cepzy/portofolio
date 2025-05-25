@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yaser Official</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <div class="card">
       <div class="header-img">
-        <img src="img/header.jpg" alt="Header" />
+        <img src="assets/img/header.jpg" alt="Header" />
         <div class="share-btn">
           <img src="assets/icons/me.png" alt="Share" />
         </div>
       </div>
 
       <div class="profile-wrapper">
-        <img src="img/profile.jpg" alt="Foto Profil" class="profile-img" />
+        <img src="assets/img/profile.jpg" alt="Foto Profil" class="profile-img" />
       </div>
 
       <h1 class="name">Yaser Official</h1>
@@ -35,7 +35,6 @@
         <a href="https://www.instagram.com/yerasid?igsh=NDFrczdsY3c3Y2tz "
           ><img src="assets/icons/instagram.png" alt="IG"
         /></a>
-        <!-- Hilangkan onclick alert dan biarkan event listener JS yang handle -->
         <a href="#" id="link-unavailable">
           <img src="assets/icons/link.png" alt="Link" />
         </a>
@@ -68,7 +67,7 @@
         <footer class="footer">
           <div class="footer-content">
             <img
-              src="img/footer.png"
+              src="assets/img/footer.png"
               alt="Logo Yaser Official"
               class="footer-logo"
             />
@@ -78,38 +77,6 @@
         </footer>
       </div>
     </div>
-
-    <script>
-      // Ambil elemen modal dan tombol close
-      const modal = document.getElementById("modal");
-      const closeBtn = document.getElementById("close-modal");
-
-      // Fungsi buka modal
-      function openModal() {
-        modal.style.display = "flex"; // pakai flex supaya align center
-      }
-
-      // Fungsi tutup modal
-      closeBtn.onclick = function () {
-        modal.style.display = "none";
-      };
-
-      // Tutup modal jika klik di luar konten modal
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
-
-      // Pasang event ke link icon "Link" yang belum tersedia
-      document
-        .getElementById("link-unavailable")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          openModal();
-        });
-    </script>
-
-    <!-- Tambahkan ini sebelum penutup </body> -->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
